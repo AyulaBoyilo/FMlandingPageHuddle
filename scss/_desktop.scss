@@ -1,0 +1,174 @@
+@media screen and (min-width: 1200px) {
+  body {
+    h1,
+    h2,
+    h3,
+    p {
+      text-align: left;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+
+    nav {
+      width: 100%;
+      padding: 50px 70px;
+
+      img {
+        width: 200px;
+      }
+
+      .btn.secondary {
+        padding: 8px 60px;
+      }
+    }
+
+    .first {
+      width: 40%;
+      padding: 0 50px 0 70px;
+      align-items: flex-start;
+      justify-content: center;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .second {
+      width: 60%;
+      padding: 70px;
+
+      img {
+        max-height: 35vw;
+        width: auto;
+      }
+    }
+  }
+
+  #grow,
+  #conversations,
+  #users {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 5vw 30px 5vw;
+
+    img {
+      height: 350px;
+      width: auto;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: none;
+    }
+  }
+
+  #grow,
+  #users {
+    .first {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 150px 0 70px;
+    }
+
+    .second {
+      order: 1;
+    }
+  }
+
+  #conversations {
+    .second {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 70px 0 150px;
+    }
+  }
+
+  section.card {
+    padding: 50px;
+    margin: 30px auto;
+  }
+
+  #grow {
+    margin-top: 150px;
+  }
+
+  .get-started {
+    width: 750px;
+    height: 250px;
+    margin: auto;
+
+    &::before {
+      height: 185px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .btn.primary {
+      font-size: 18px;
+      padding: 20px 100px;
+
+      &:hover {
+        background-color: lighten($color: $pink, $amount: 7);
+      }
+    }
+  }
+
+  footer {
+    padding: 170px 80px 50px 140px;
+
+    .footer-logo {
+      width: 250px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+
+      .contact,
+      .links-1,
+      .links-2,
+      .social {
+        margin-top: 40px;
+      }
+
+      .contact {
+        width: 370px;
+
+        .location {
+          margin-top: 0;
+        }
+      }
+
+      .links-1,
+      .links-2 {
+        a {
+          margin-bottom: 20px;
+        }
+      }
+
+      .social {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 260px;
+      }
+    }
+
+    .footer-copyright {
+      align-items: flex-end;
+    }
+  }
+}

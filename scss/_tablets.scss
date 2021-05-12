@@ -1,0 +1,113 @@
+@media screen and (min-width: 650px) {
+  header {
+    nav {
+      padding: 30px 50px;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+      max-width: 45vw;
+    }
+
+    .first,
+    .second {
+      width: 80vw;
+      margin: auto;
+    }
+  }
+
+  #grow,
+  #conversations,
+  #users {
+    max-width: max(500px, 55vw);
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-height: 350px;
+      width: auto;
+      padding: 50px 50px 0 50px;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    p {
+      max-width: 80%;
+      margin: 20px auto 10px auto;
+    }
+  }
+
+  .get-started {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      height: 135px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .btn.primary {
+      font-size: 18px;
+      padding: 17px 70px;
+
+      &:hover {
+        background-color: lighten($color: $pink, $amount: 7);
+      }
+    }
+  }
+
+  footer {
+    padding: 170px 100px 70px 100px;
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 0.7fr 0.3fr;
+      grid-template-rows: 1fr 1fr 70px;
+
+      .location,
+      .phone {
+        margin-bottom: 25px;
+      }
+
+      .contact {
+        grid-area: 1 / 1 / 3 / 2;
+
+        p {
+          max-width: 250px;
+        }
+      }
+
+      .social {
+        grid-area: 3 / 1 / 3 / 3;
+      }
+
+      .links-1,
+      .links-2 {
+        padding-left: 50px;
+
+        a {
+          margin-bottom: 10px;
+        }
+      }
+
+      .links-1 {
+        margin-top: 20px;
+      }
+    }
+  }
+}
